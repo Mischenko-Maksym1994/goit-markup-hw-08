@@ -61,7 +61,7 @@ img {
 }
 
 .conteiner {
-  width: 1200px;
+  width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -453,25 +453,41 @@ textarea:focus {
 
 .hero {
   background-color: #2f303a;
-  height: 600px;
-  max-width: 1600px;
+  height: 400px;
+  width: 480px;
   margin: 0 auto;
-  padding-top: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/img-hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    max-width: 1600px;
+    padding-top: 200px;
+  }
+}
+
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.67;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-title-color);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {
@@ -488,7 +504,6 @@ textarea:focus {
 }
 
 .feature-list {
-  display: flex;
   margin-left: -30px;
 }
 
