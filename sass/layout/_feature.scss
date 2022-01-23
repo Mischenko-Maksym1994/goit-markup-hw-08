@@ -1,5 +1,7 @@
 .feature {
-  padding-top: 94px;
+  // padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .feature-list {
   // display: flex;
@@ -7,13 +9,14 @@
 }
 .feature-list__item {
   margin-left: 30px;
+  padding-bottom: 30px;
 }
 .feature-list__icon-fon {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   background-color: #f5f4fa;
-  width: 270px;
+  // width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -38,7 +41,7 @@
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
-  width: 270px;
+  // width: 270px;
   padding-top: 10px;
 }
 .inv {

@@ -453,8 +453,7 @@ textarea:focus {
 
 .hero {
   background-color: #2f303a;
-  height: 400px;
-  width: 480px;
+  min-width: 480px;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -462,14 +461,6 @@ textarea:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    height: 600px;
-    max-width: 1600px;
-    padding-top: 200px;
-  }
 }
 
 .hero__title {
@@ -500,7 +491,8 @@ textarea:focus {
 }
 
 .feature {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .feature-list {
@@ -509,6 +501,7 @@ textarea:focus {
 
 .feature-list__item {
   margin-left: 30px;
+  padding-bottom: 30px;
 }
 
 .feature-list__icon-fon {
@@ -516,7 +509,6 @@ textarea:focus {
   margin-left: auto;
   margin-right: auto;
   background-color: #f5f4fa;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -541,7 +533,6 @@ textarea:focus {
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
-  width: 270px;
   padding-top: 10px;
 }
 
