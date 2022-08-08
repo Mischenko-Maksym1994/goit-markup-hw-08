@@ -1,16 +1,19 @@
 .feature {
   // padding-top: 94px;
   padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-bottom: 60px;
 }
-.feature-list {
-  // display: flex;
-  margin-left: -30px;
-}
-.feature-list__item {
-  margin-left: 30px;
+// .feature-list {
+//   // display: flex;
+//   //
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
+.feature-list__item:not(:last-child) {
+  // margin-left: 30px;
   padding-bottom: 30px;
 }
+
 .feature-list__icon-fon {
   display: flex;
   margin-left: auto;
@@ -35,6 +38,8 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+
+  text-align: center;
 }
 
 .feature-list__text {

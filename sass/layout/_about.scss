@@ -1,5 +1,8 @@
 .about {
   padding-bottom: 94px;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .about-list {
