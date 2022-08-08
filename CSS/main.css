@@ -580,6 +580,9 @@ textarea:focus {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -605,14 +608,10 @@ textarea:focus {
   margin-bottom: 16px;
 }
 
-.customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .customers-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -633,8 +632,9 @@ textarea:focus {
   border: 1px solid var(--acsent-color);
 }
 
-.customers-list__item + .customers-list__item {
-  margin-left: 30px;
+.customers-list__item {
+  flex-basis: calc(100% / 2 - 30px);
+  margin-bottom: 30px;
 }
 
 .customer-list__icon {

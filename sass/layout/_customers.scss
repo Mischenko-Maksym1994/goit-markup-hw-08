@@ -1,11 +1,12 @@
-.customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+// .customers {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
 
 .customers-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 .customers-list__link {
@@ -26,8 +27,13 @@
   }
 }
 
-.customers-list__item + .customers-list__item {
-  margin-left: 30px;
+// .customers-list__item + .customers-list__item {
+//   margin-left: 30px;
+// }
+
+.customers-list__item {
+  flex-basis: calc(100% / 2 - 30px);
+  margin-bottom: 30px;
 }
 
 .customer-list__icon {
