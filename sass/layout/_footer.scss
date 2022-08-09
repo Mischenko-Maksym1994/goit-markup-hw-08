@@ -5,12 +5,14 @@
 }
 
 .footer__conteiner {
-  display: flex;
+  // display: flex;
+  text-align: center;
 }
 
 .footer-nav {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  text-align: center;
 }
 
 .footer-logo {
@@ -22,9 +24,9 @@
   color: var(--primary-title-color);
 }
 
-.footer-adress {
-  width: 231px;
-}
+// .footer-adress {
+//   width: 231px;
+// }
 
 .adress-list {
   text-decoration: none;
@@ -33,7 +35,7 @@
 }
 
 .adress-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .adress-list__city {
@@ -56,8 +58,8 @@
 }
 
 .footer-links {
-  margin-left: 70px;
-  padding-top: 12px;
+  // margin-left: 70px;
+  padding-top: 60px;
 }
 
 .footer-links__text {
@@ -66,7 +68,7 @@
 
 .footer-sotial-list {
   display: flex;
-  justify-content: left;
+  // justify-content: left;
 }
 
 .footer-sotial-list__link {
@@ -77,9 +79,9 @@
   fill: #ffffff;
 }
 
-.footer-form {
-  display: flex;
-}
+// .footer-form {
+//   // display: flex;
+// }
 
 .footer-form__input {
   width: 100%;
@@ -92,9 +94,9 @@
 }
 
 .footer-form-btn {
-  padding-top: 12px;
-  margin-left: 93px;
-  width: 570px;
+  padding-top: 60px;
+  // margin-left: 93px;
+  // width: 570px;
 }
 
 .footer-btn-tumb {
@@ -103,7 +105,7 @@
   border: 0px;
   margin-left: 12px;
   height: 50px;
-  padding-top: 35px;
+  padding-top: 20px;
 }
 
 .btn-footer {
