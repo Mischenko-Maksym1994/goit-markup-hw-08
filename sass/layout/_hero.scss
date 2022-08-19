@@ -1,7 +1,5 @@
 .hero {
   background-color: #2f303a;
-  // height: 400px;
-  // min-width: 480px;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -15,12 +13,6 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  // @media screen and (min-width: 1200px) {
-  //   height: 600px;
-  //   max-width: 1600px;
-  //   padding-top: 200px;
-  //   padding-bottom: 200px;
-  // }
   @media screen and (min-width: 480px) {
     width: 480px;
   }
