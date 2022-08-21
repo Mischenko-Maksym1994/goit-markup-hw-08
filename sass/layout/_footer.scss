@@ -1,18 +1,27 @@
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer__conteiner {
-  // display: flex;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-wrap: nowrap;
+  }
 }
 
 .footer-nav {
-  // display: flex;
-  // flex-direction: column;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer-logo {
@@ -23,10 +32,6 @@
 .footer-logo__customization {
   color: var(--primary-title-color);
 }
-
-// .footer-adress {
-//   width: 231px;
-// }
 
 .adress-list {
   text-decoration: none;
@@ -58,17 +63,20 @@
 }
 
 .footer-links {
-  // margin-left: 70px;
   padding-top: 60px;
-}
-
-.footer-links__text {
-  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    padding-top: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    text-align: start;
+  }
 }
 
 .footer-sotial-list {
   display: flex;
-  // justify-content: left;
+  margin-top: 20px;
 }
 
 .footer-sotial-list__link {
@@ -79,9 +87,21 @@
   fill: #ffffff;
 }
 
-// .footer-form {
-//   // display: flex;
-// }
+.footer-form-btn {
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 0px;
+    margin-left: 93px;
+    text-align: start;
+    width: 570px;
+  }
+}
+
+.footer-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 
 .footer-form__input {
   width: 100%;
@@ -93,29 +113,29 @@
   background-color: rgba(47, 48, 58, 1);
 }
 
-.footer-form-btn {
-  padding-top: 60px;
-  // margin-left: 93px;
-  // width: 570px;
-}
-
 .footer-btn-tumb {
-  position: relative;
-
   border: 0px;
-  margin-left: 12px;
   height: 50px;
   padding-top: 20px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    padding-bottom: 0px;
+    padding-top: 35px;
+  }
 }
 
 .btn-footer {
-  position: relative;
   border: none;
+  display: flex;
 }
 
 .btn-footer__icon {
   width: 24px;
   height: 24px;
-  margin-left: 10px;
+  margin-left: 12px;
   fill: #ffffff;
+  text-align: center;
 }

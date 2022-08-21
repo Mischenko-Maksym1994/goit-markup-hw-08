@@ -24,7 +24,7 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
+  // width: 528px;
   box-sizing: border-box;
   padding: 40px;
   border-radius: 4px;
@@ -35,6 +35,16 @@
   transform: translate(-50%, -50%) scale(1);
 
   transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 480px) {
+    width: calc(100% - 30px);
+  }
+  @media screen and (min-width: 481px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .form__title {
@@ -117,6 +127,10 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .box-btn {
@@ -125,13 +139,19 @@ textarea {
 }
 
 .checkbox__icon {
-  font-size: 14px;
-  line-height: 1.71;
+  // font-size: 14px;
+  // line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--primary-text-color);
 
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__icon {
