@@ -27,6 +27,10 @@
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+  @media screen and (min-width: 480px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .footer-logo__customization {
