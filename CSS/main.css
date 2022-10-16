@@ -485,6 +485,10 @@ textarea:focus {
   display: block;
 }
 
+.menu-button.is-open .icon-cross:hover, .menu-button.is-open .icon-cross:focus {
+  fill: var(--acsent-color);
+}
+
 .menu-button.is-open .icon-menu {
   display: none;
   top: 100%;
@@ -494,7 +498,7 @@ textarea:focus {
 }
 
 .menu-conteiner {
-  width: 480px;
+  max-width: 480px;
 }
 
 .menu-conteiner.is-open {
@@ -524,8 +528,22 @@ textarea:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .menu-conteiner {
+    min-width: 1200px;
+  }
+}
+
 .menu-contact {
+  display: block;
   margin-top: 64px;
+  margin-left: -20px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-contact {
+    display: none;
+  }
 }
 
 .menu-contact__item {
@@ -683,6 +701,13 @@ textarea:focus {
 
 .contacts-list__link:hover, .contacts-list__link:focus {
   color: var(--acsent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-list__link:hover, .contacts-list__link:focus {
+    font-size: 34px;
+    line-height: 1.17;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1069,6 +1094,19 @@ textarea:focus {
 .project-box {
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .project-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .progect-box__img {
+    scale: 1.25;
+  }
 }
 
 .projects-box__fon {

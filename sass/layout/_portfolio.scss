@@ -87,13 +87,18 @@
 .project-box {
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-// .progect-box__img {
-//   @media screen and (max-width: 767px) {
-//     background-size: cover;
-//   }
-// }
+.progect-box__img {
+  @media screen and (max-width: 767px) {
+    // max-width: 450px;
+    scale: 1.25;
+  }
+}
 
 .projects-box__fon {
   position: absolute;
