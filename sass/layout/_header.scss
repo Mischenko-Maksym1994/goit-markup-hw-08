@@ -1,9 +1,7 @@
 .header {
   margin: 0 auto;
   border-bottom: 1px solid #ececec;
-  // @media screen and (max-width: 479px) {
-  //   max-width: 479px;
-  // }
+
   @media screen and (max-width: 767px) {
     max-width: 480px;
     position: relative;
@@ -11,19 +9,13 @@
 }
 
 .conteiner__head {
-  // display: flex;
-  // align-items: center;
   padding-top: 0px;
   padding-bottom: 0px;
-  @media screen and (max-width: 479px) {
-    min-width: 350px;
-  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    // padding-top: 26px;
-    // padding-bottom: 26px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 0;
@@ -35,10 +27,6 @@
   display: flex;
   align-items: center;
 
-  // @media screen and (max-width: 480px) {
-  //   flex-direction: row;
-  //   max-width: 479px;
-  // }
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -47,7 +35,6 @@
 
 .menu-button {
   display: inline-flex;
-  // margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -115,7 +102,6 @@
 }
 
 .menu-contact__item {
-  // margin-left: 20px;
   padding-left: 10px;
   &:not(:last-child) {
     border-right: 1px solid;
@@ -136,9 +122,6 @@
 // }
 
 .header-list {
-  // display: flex;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
   margin-top: -32px;
 
   @media screen and (min-width: 768px) {
