@@ -141,21 +141,39 @@
                 <h2 class="secondary-title">Чим ми займаємося</h2>
                 <ul class="about-list list">
                     <li class="about-list__item">
-                        <img src="./image/img_stryctyr.jpg" alt="Десктопные приложения" width="370">
+                        <img
+                        srcset="./image/desctop.webp 1x, 
+                                ./image/desctop@2x.webp 2x"
+
+                        src="./image/desctop.webp" 
+                        alt="Десктопні додатки" 
+                        width="370">
                     <div class="about-list__specialization">
                         <h3 class="third-title">Десктопні додатки</h3>
                     </div>
                     </li>
 
                     <li class="about-list__item">
-                        <img src="./image/box_2.jpg" alt="Мобильные приложения" width="370">
+                        <img 
+                            srcset="./image/mobile.webp 1x, 
+                                    ./image/mobile@2x.webp 2x"
+
+                            src="./image/mobile.webp" 
+                            alt="Мобільні додатки" 
+                            width="370">
                     <div class="about-list__specialization">
                         <h3 class="third-title">Мобильні додатки</h3>
                     </div>
                     </li>
 
                     <li class="about-list__item">
-                        <img src="./image/tablet.jpg" alt="Дизайнерские решения" width="370">
+                        <img
+                        srcset="./image/design.webp 1x, 
+                                ./image/design@2x.webp 2x" 
+
+                        src="./image/design.webp" 
+                            alt="Дизайнерскі рішення" 
+                            width="370">
                     <div class="about-list__specialization">
                         <h3 class="third-title">Дизайнерські рішення</h3>
                     </div>
@@ -170,8 +188,27 @@
                 <h2 class="secondary-title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <img class="team-list__foto" src="./image/product_designer.jpg" alt="Ігор Дем'яненко" >
-                            <div class="team-conteiner">
+                        <picture>
+                            <source 
+                            srcset="./image/product_designer_desktop.webp 1x, 
+                                    ./image/product_designer_desktop@2x.webp 2x"
+                                    media="(min-width:1200px)"
+                                    />
+                            <source 
+                            srcset="./image/product_designer_tablet.webp 1x, 
+                                    ./image/product_designer_tablet@2x.webp 2x,"
+                                    media="(min-width:768px)"
+                                    />
+                            <source 
+                            srcset="./image/product_designer_mobile.webp 1x, 
+                                    ./image/product_designer_mobile@2x.webp 2x"
+                                    media="(min-width:320px)"
+                                    />
+                            <img class="team-list__foto" 
+                                src="./image/product_designer_desktop.webp.jpg" 
+                                alt="Ігор Дем'яненко" >
+                        </picture>
+                        <div class="team-conteiner">
                                 <h3 class="team-conteiner__name">Ігор Дем'яненко</h3>
                                 <p class="team-conteiner__text" lang="en">Product Designer</p>
                                 <ul class="sotial-list list">
@@ -203,8 +240,25 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img src="./image/frontend_developer.jpg" alt="Ольга Рєпіна" width="">
-                            <div class="team-conteiner">
+                        <picture>
+                            <source
+                                srcset="./image/frontend_developer_desktop.webp 1x, 
+                                ./image/frontend_developer_desktop@2x.webp 2x"
+                                media="(min-width:1200px)"/>
+
+                            <source
+                                srcset="./image/frontend_developer_tablet.webp 1x, 
+                                    ./image/frontend_developer_tablet@2x.webp 2x"
+                                    media="(min-width:768px)"/>
+
+                            <source
+                                srcset="./image/frontend_developer_mobile.webp 1x, 
+                                        ./image/frontend_developer_mobile@2x.webp 2x"
+                                        media="(min-width:320px)"/>
+                            <img src="./image/frontend_developer_desktop.webp" 
+                                alt="Ольга Рєпіна">
+                        </picture>
+                        <div class="team-conteiner">
                                 <h3 class="team-conteiner__name">Ольга Рєпіна</h3>
                                 <p class="team-conteiner__text" lang="en">Frontend Developer</p>
                                 <ul class="sotial-list list">
@@ -244,8 +298,26 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img src="./image/marketing.jpg" alt="Микола Тарасов" width="">
-                            <div class="team-conteiner">
+                        <picture>
+                            <source
+                            srcset="./image/marketing_desktop.webp 1x,
+                                    ./image/marketing_desktop@2x.webp 2x"
+                                    media="(min-width:1200px)"
+                                    />
+                            <source 
+                            srcset="./image/marketing_tablet.webp 1x, 
+                                    ./image/marketing_tablet@2x.webp 2x"
+                                    media="(min-width:768px)
+                                    "/>
+                            <source
+                            srcset="./image/marketing_mobile.webp 1x, 
+                                    ./image/marketing_mobile@2x.webp 2x"
+                                    media="(min-width:320px)
+                                    "/>
+                            <img src="./image/marketing_desktop.webp" 
+                                alt="Микола Тарасов">
+                        </picture>
+                        <div class="team-conteiner">
                                 <h3 class="team-conteiner__name">Микола Тарасов</h3>
                                 <p class="team-conteiner__text" lang="en">Marketing</p>
                                 <ul class="sotial-list list">
@@ -285,8 +357,24 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img src="./image/ui_designer.jpg" alt="Михайло Єрмаков" width="">
-                            <div class="team-conteiner">
+                        <picture>
+                            <source
+                            srcset="./image/ui_designer_desktop.webp 1x, 
+                                    ./image/ui_designer_desktop@2x.webp 2x"
+                                    media="(min-width:1200px)"/>
+                            <source
+                            srcset="./image/ui_designer_tablet.webp 1x,
+                                    ./image/ui_designer_tablet@2x.webp 2x"
+                                    media="(min-width:768px)"/>
+                            <source
+                            srcset="./image/ui_designer_mobile.webp 1x,
+                                    ./image/ui_designer_mobile@2x.webp 2x"
+                                    media="(min-width:320px)"/>
+
+                        <img src="./image/ui_designer_desktop.webp" 
+                                alt="Михайло Єрмаков">
+                        </picture>
+                        <div class="team-conteiner">
                                 <h3 class="team-conteiner__name">Михайло Єрмаков</h3>
                                 <p class="team-conteiner__text" lang="en">UI Designer</p>
                                 <ul class="sotial-list list">
@@ -322,7 +410,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
