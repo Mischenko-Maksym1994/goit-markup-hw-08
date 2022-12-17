@@ -741,27 +741,39 @@ textarea:focus {
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/img-hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/image/Hero_mobile.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 480px) {
+@media (min-resolution: 2dppx) {
   .hero {
-    max-width: 480px;
+    background-image: url(/image/Hero_mobile@2x.jpg);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .hero {
-    max-width: 768px;
+    background-image: url(/image/Hero_tablet.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 481px) and (max-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    max-width: 1600px;
+    background-image: url(/image/Hero_tablet@2x.jpg);
+  }
+}
+
+@media (min-width: 769px) {
+  .hero {
+    background-image: url(/image/Hero_desktop.jpg);
+  }
+}
+
+@media (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/image/Hero_desktop@2x.jpg);
   }
 }
 
